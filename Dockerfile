@@ -28,7 +28,7 @@ RUN yarn install
 RUN yarn build
 
 # Delete everyhing we don't need in the next stage
-RUN rm -rf node_modules tsconfig.tsbuildinfo *.ts **/*.ts .eslint* .git* .prettier* .vscode* tsconfig.json .yarn* yarn.lock
+# RUN rm -rf node_modules tsconfig.tsbuildinfo *.ts **/*.ts .eslint* .git* .prettier* .vscode* tsconfig.json .yarn* yarn.lock
 
 # Final image
 FROM node:16-bullseye-slim AS middleware
